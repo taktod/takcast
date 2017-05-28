@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var pluginLoader_1 = require("./pluginLoader");
+exports.plugins = {};
+var base = require("./base/node");
+pluginLoader_1.setPlugin(exports.plugins, base._);
+var media = require("./media/node");
+pluginLoader_1.setPlugin(exports.plugins, media._);
+var output = require("./output/node");
+pluginLoader_1.setPlugin(exports.plugins, output._);

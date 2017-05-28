@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": ".",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "allowJs": true,
+    "jsx": "react"
+  }
+}
