@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@takcast/capture": "github:taktod/takcast.source.capture",
+    "@takcast/imagemixer": "github:taktod/takcast.media.imagemixer",
     "@takcast/mediafile": "github:taktod/takcast.source.mediafile",
     "@takcast/webmfile": "github:taktod/takcast.output.webmfile",
     "electron": "^1.6.10",
