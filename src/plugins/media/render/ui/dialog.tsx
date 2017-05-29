@@ -29,10 +29,12 @@ export var dialog = (media:Media) => {
       this.setState({showDialog:false});
     }
     public _create() {
-      var plugin = plugins[this.state.index];
-      var newSource = plugin.createNewSource();
-      if(newSource != null) {
-        media._addSource(newSource);
+      if(plugins.length != 0) {
+        var plugin = plugins[this.state.index];
+        var newSource = plugin.createNewSource();
+        if(newSource != null) {
+          media._addSource(newSource);
+        }
       }
       this._close();
     }

@@ -5,7 +5,7 @@
     "outDir": ".",
     "noImplicitAny": false,
     "noImplicitReturns": true,
-    "allowJs": true,
+    "allowJs": false,
     "jsx": "react"
   }
 }

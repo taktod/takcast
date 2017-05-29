@@ -40,6 +40,9 @@ export var palette = (media:Media) => {
       }
     }
     public deleteSource() {
+      if(this.state.index == -1) {
+        return;
+      }
       media._setActiveSource(-1);
       media._deleteSource(media._refSources()[this.state.index]);
     }
