@@ -24,7 +24,6 @@ module.exports = {
     "react": "React",
     "react-dom": "ReactDOM",
     "react-bootstrap": "ReactBootstrap",
-    "three": "THREE",
     "electron": "electron"
   }
 }
