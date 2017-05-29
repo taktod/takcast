@@ -8,7 +8,7 @@
     "rebuild": "electron-rebuild",
     "webpack": "webpack -w",
     "test": "electron .",
-    "setup": "node updatePlugins;webpack;tsc src/main.ts --outDir ./dest/;electron-rebuild;"
+    "setup": "node updatePlugins && webpack && tsc src/main.ts --outDir ./dest/ && electron-rebuild"
   },
   "author": "taktod",
   "license": "BSD-3-Clause",
