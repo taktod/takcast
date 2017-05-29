@@ -146,8 +146,6 @@ export class Media implements IFieldPlugin {
   }
   // sourceが追加されたときの動作
   public _addSource(source:ISource):void {
-    console.log("addSourceされました。");
-    console.log(source);
     // 増やす
     this.sources.push(source);
     // 通知する。

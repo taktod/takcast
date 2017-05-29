@@ -21,7 +21,7 @@ var copy = (src, dest) => {
 }
 
 // まずsrc/plugins/*.base.tsをsrc/plugins/*.tsにコピーする。
-      copy("src/plugins/render.base.ts", "src/plugins/render.ts")
+copy("src/plugins/render.base.ts", "src/plugins/render.ts")
 .then(copy("src/plugins/node.base.ts", "src/plugins/node.ts"))
 .then(() => {
   // pluginを検索して登録していく。

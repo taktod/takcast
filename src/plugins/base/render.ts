@@ -1,5 +1,4 @@
 import {IBasePlugin} from "takcast.interface";
-import {IPlugin} from "takcast.interface";
 import * as electron from "electron";
 
 /**
@@ -23,8 +22,10 @@ class Base implements IBasePlugin {
    * ここにあてがうと、音がでなくなる
    */
   private devnullNode:GainNode;
-  private gainNode:GainNode;
-  public setPlugins(plugins:{[key:string]:Array<IPlugin>}):void {
+  /**
+   * コンストラクタ
+   */
+  constructor() {
     this.context = new AudioContext();
     this.devnullNode = this.context.createGain();
     this.devnullNode.gain.value = 0.0;
