@@ -24,6 +24,9 @@
     "webpack": "^2.6.1"
   },
   "dependencies": {
+    "@takcast/capture": "github:taktod/takcast.source.capture",
+    "@takcast/mediafile": "github:taktod/takcast.source.mediafile",
+    "@takcast/webmfile": "github:taktod/takcast.output.webmfile",
     "electron": "^1.6.10",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
