@@ -17,20 +17,26 @@ export var footer = (output:Output) => {
   var footer = document.getElementById("footer");
   class Footer extends React.Component<{}, {}> {
     state = {
-      index:0,
-      hoge:0
+      index:0
     };
     constructor() {
       super();
       this._updatePadding = this._updatePadding.bind(this);
+      this._change = this._change.bind(this);
     }
     private _updatePadding() {
       output._onUpdateSize();
 //      document.body.style["padding-bottom"] = (footer.getElementsByClassName("navbar")[0].clientHeight + 10) + "px";
     }
+    private _change(item) {
+      this.setState({index:item.target.value});
+    }
     public componentDidMount() {
       this._updatePadding();
       window.addEventListener("resize", this._updatePadding);
+    }
+    public componentDidUpdate() {
+      this._updatePadding();
     }
     public render() {
       return (
@@ -39,7 +45,7 @@ export var footer = (output:Output) => {
           <NCollapse onEntered={this._updatePadding} onExited={this._updatePadding}>
             <Navbar.Text>
             <Form>
-              <FormControl componentClass="select">
+              <FormControl componentClass="select" onChange={this._change}>
                 {
                   plugins.map(function(plugin, i) {
                     return <option value={i} key={i}>{plugin.name}</option>
