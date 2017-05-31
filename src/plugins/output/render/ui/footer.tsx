@@ -36,7 +36,7 @@ export var footer = (output:Output) => {
       window.addEventListener("resize", this._updatePadding);
     }
     public componentDidUpdate() {
-      this._updatePadding();
+      setTimeout(this._updatePadding, 100);
     }
     public render() {
       return (
