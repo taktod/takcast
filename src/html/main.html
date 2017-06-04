@@ -28,6 +28,10 @@ var electron = null;
 if(this.require != undefined) {
   electron = this.require("electron");
 }
+try {
+  window["platform"] = process.platform;
+}
+catch(e) {};
     </script>
     <script type="text/javascript" src="../../dest/app.js"></script>
   </body>
