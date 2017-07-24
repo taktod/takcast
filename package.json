@@ -25,9 +25,11 @@
   },
   "dependencies": {
     "@takcast/capture": "github:taktod/takcast.source.capture",
+    "@takcast/desktopcapture": "github:taktod/takcast.source.desktopcapture",
     "@takcast/imagemixer": "github:taktod/takcast.media.imagemixer",
     "@takcast/mediafile": "github:taktod/takcast.source.mediafile",
     "@takcast/webmfile": "github:taktod/takcast.output.webmfile",
+    "@takcast/webmsocket": "github:taktod/takcast.output.webmsocket",
     "electron": "^1.6.10",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
